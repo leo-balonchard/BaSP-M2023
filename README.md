@@ -4,15 +4,15 @@ In this bootcamp I will work with a team in all phases of development for a real
 
 ## Week 01
 
-```
-We designed in figma a project for a gym called "MEGA ROCKET". We had to work as a team of more than 10 people coordinating the different parts of the project.
-```
+
+- We designed in figma a project for a gym called "MEGA ROCKET". 
+We had to work as a team of more than 10 people coordinating the different parts of the project.
+
 
 ## Week 02
 
-```
-We must create a page using only HTML based on the previous week's figma. We must also use git and github.
-```
+- We must create a page using only HTML based on the previous week's figma. We must also use git and github.
+
 
 ## Author
 ```
