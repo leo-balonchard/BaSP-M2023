@@ -4,3 +4,29 @@ html {
   background-color: #ECE9F1;
   font-family: Roboto, sans-serif;
 }
+
+header {
+  height: 217px;
+  background-color: #ECE9F1;
+  text-align: center;
+}
+
+header img {
+  height: 115px;
+  width: 91px;
+  float: left;
+}
+
+aside {
+  background-color: #373867;
+  height: 5697px;
+  width: 271px;
+  padding: 20px;
+  float: left;
+  margin-right: 30px;
+}
+
+img {
+  max-width: 481px;
+  max-height: 491px;
+}
