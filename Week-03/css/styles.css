@@ -87,14 +87,21 @@ img {
 .why-mega {
   height: 500px;
   color: #373867;
+  padding-top: 200px;
 }
 
 .why-mega img {
   float: right;
 }
 
+.why-mega p {
+  width: 800px;
+  font-size: 30px;
+}
+
 .classes {
   padding-left: 500px;
+  padding-top: 400px;
 }
 
 .membership {
