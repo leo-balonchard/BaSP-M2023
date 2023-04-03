@@ -54,7 +54,8 @@ aside {
 
 ul {
   text-transform: uppercase;
-  line-height: 50px;
+  line-height: 110px;
+  font-size: 30px;
 }
 
 a {
@@ -87,16 +88,32 @@ img {
 .why-mega {
   height: 500px;
   color: #373867;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .why-mega img {
-  float: right;
+  position: absolute;
+  top: 1100px;
+  left: 1000px;
 }
 
 .why-mega p {
   width: 800px;
   font-size: 30px;
+  font-weight: bold;
+padding-top: 80px;
+}
+
+.why-03 h3 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: #373867;
+  width: 900px;
+  height: 100px;
+  margin-top: 250px;
+  padding-top: 50px;
 }
 
 .classes {
