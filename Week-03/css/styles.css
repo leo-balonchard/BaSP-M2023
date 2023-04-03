@@ -44,7 +44,7 @@ main {
 
 aside {
   background-color: #373867;
-  height: 5493px;
+  height: 6493px;
   width: 271px;
   padding: 20px;
   float: left;
@@ -285,13 +285,110 @@ padding-top: 80px;
 }
 
 .universe {
-  background-color: #9bce9d;
   text-align: left;
+  padding-top: 100px;
+  margin-top: 100px;
 }
 
 .universe img {
   max-width: 300px;
   max-height: 300px;
+}
+
+.universe h4 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.universe h5 {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.universe p {
+  color: white;
+  max-width: 550px;
+  font-size: 30px;
+}
+
+.art-reservation {
+  background-color: #AACE9B;
+  height: 408px;
+  padding-top: 120px;
+  padding-left: 460px;
+}
+
+.art-membership {
+  background-color: #373867;
+  height: 408px;
+  padding-top: 120px;
+  padding-left: 460px;
+}
+
+.art-membership img {
+  position: absolute;
+  top: 5120px;
+  left: 1100px;
+}
+
+.art-weekly {
+  background-color: white;
+  height: 408px;
+  padding-top: 120px;
+  padding-left: 460px;
+}
+
+.art-weekly p {
+  color: #373867;
+}
+
+.art-weekly h4 {
+  color: #373867;
+}
+
+.art-weekly h5 {
+  color: #373867;
+}
+
+.art-weekly img {
+  position: absolute;
+  top: 5660px;
+  left: 1100px;
+}
+
+.art-contact {
+  background-color: rgb(97, 94, 95);
+  height: 408px;
+  padding-top: 120px;
+  padding-left: 460px;
+}
+
+.art-contact img {
+  position: absolute;
+  top: 6190px;
+  left: 1100px;
+}
+
+.art-contact p {
+  color: #373867;
+}
+
+.art-contact h4 {
+  color: #373867;
+}
+
+.art-contact h5 {
+  color: #373867;
+}
+
+.art-reservation img {
+  position: absolute;
+  top: 4600px;
+  left: 1100px;
 }
 
 .sec-form {
