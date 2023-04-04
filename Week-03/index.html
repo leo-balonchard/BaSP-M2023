@@ -148,13 +148,21 @@
           <label for="complain"> I would like to do a complain</label>
           <input type="radio" id="opinion" name="question" value="opinion">
           <label for="opinion"> I would like to make a suggestion/opinion</label>
-          <input type="radio" id="about" name="question" value="about">
-          <label for="about"> I would like to know more about Membership and Prices</label>
-          <input type="text" placeholder="NAME">
-          <input type="text" placeholder="SURNAME">
-          <input type="email" placeholder="EMAIL">
-          <label for="message">Write your message</label>
-          <textarea id="message" name="message" cols="30" rows="10" placeholder="..."></textarea>
+          <div class="text-04">
+            <input type="radio" id="about" name="question" value="about">
+            <label for="about"> I would like to know more about Membership and Prices</label>
+          </div>
+          <div class="name-sur">
+            <input type="text" placeholder="NAME">
+            <input type="text" placeholder="SURNAME">
+          </div>
+          <div class="d-email">
+            <input type="email" placeholder="EMAIL">
+          </div>
+          <div class="message">
+            <label for="message">Write your message</label>
+            <textarea class="textarea" id="message" name="message" cols="30" rows="10" placeholder="..."></textarea>
+          </div>
           <button type="submit">Submit</button>
         </form>
       </section>

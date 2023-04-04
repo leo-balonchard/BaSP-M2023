@@ -419,6 +419,34 @@ padding-top: 80px;
   padding-bottom: 30px;
 }
 
+.textarea {
+  position: absolute;
+  top: 7100px;
+  left: 790px;
+}
+
+.text-04 {
+  margin-top: 30px;
+  border: 2px solid;
+  max-width: 500px;
+  margin-left: 50px;
+  padding: 3px;
+}
+
+.message {
+  font-size: 20px;
+  padding-top: 35px;
+}
+
+.name-sur {
+  padding-top: 80px;
+  padding-left: 10px;
+}
+
+.d-email {
+  margin-top: 47px;
+}
+
 .nav-menu {
 position: fixed;
 max-width: 170px;
@@ -436,4 +464,12 @@ footer p {
   background-color: #D9D9D9;
   height: 50px;
   padding-top: 35px;
+}
+
+footer a {
+  padding: 80px;
+}
+
+footer img {
+  padding-bottom: 55px;
 }
