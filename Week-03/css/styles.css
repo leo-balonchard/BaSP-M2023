@@ -44,7 +44,7 @@ main {
 
 aside {
   background-color: #373867;
-  height: 6493px;
+  height: 7124px;
   width: 271px;
   padding: 20px;
   float: left;
@@ -392,9 +392,31 @@ padding-top: 80px;
 }
 
 .sec-form {
-  width: 900px;
-  margin-left: 450px;
+  width: 665px;
+  height: 694px;
+  margin-left: 580px;
   text-align: center;
+  background-color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: #373867;
+}
+
+.sec-form button {
+  position: absolute;
+  top: 7300px;
+  left: 850px;
+  background-color: #AACE9B;
+  color: #373867;
+  padding: 8px 50px;
+}
+
+.sec-form h5{
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .nav-menu {
@@ -407,8 +429,11 @@ footer {
   width: 100%;
   background-color: #FFFFFF;
   text-align: center;
+  padding-top: 80px;
 }
 
 footer p {
   background-color: #D9D9D9;
+  height: 50px;
+  padding-top: 35px;
 }
