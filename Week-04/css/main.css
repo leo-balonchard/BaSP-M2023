@@ -12,8 +12,14 @@ main img {
   max-width: 70%;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .why-mega img{
   display: none;
+  width: 600px;
 }
 
 .our-philo {
@@ -40,7 +46,6 @@ main img {
 
 .why-mega {
   color: #373867;
-  height: 40vh;
 }
 
 .why-mega h2 {
@@ -71,6 +76,10 @@ main img {
   color: white;
 }
 
+.why-03 {
+  margin-bottom: 50px;
+}
+
 .classes img{
   padding: 15px;
 }
@@ -84,7 +93,7 @@ main img {
   color: #373867;
 }
 
-.container-img-only img {
+.membership img {
   width: 500px;
 }
 
@@ -117,7 +126,7 @@ main img {
 
 .only-classes, .classic, .black{
   margin-bottom: 50px;
-  max-width: 330px;
+  width: 330px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -146,15 +155,18 @@ main img {
 .universe {
   display: flex;
   flex-direction: column;
+  text-align: start;
 }
 
 .universe article {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 50px 30px 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .universe img {
   max-width: 120px;
+  align-self: center;
 }
 
 .universe h4 {
@@ -198,8 +210,8 @@ main img {
   margin-bottom: 50px;
   margin-top: 50px;
   max-width: 300px;
-  align-self: center;
   border-radius: 30px;
+  align-self: center;
   color: #373867;
 }
 
@@ -261,4 +273,78 @@ main img {
 
 .sec-form-message {
   text-align: start;
+}
+
+@media (min-width: 601px) {
+
+  .why-mega img{
+    display: inline-block;
+  }
+
+  .our-philo p {
+    padding: 50px;
+    font-size: 20px;
+    max-width: 550px;
+    align-self: center;
+  }
+
+}
+
+@media (min-width: 1025px){
+
+  aside {
+    display: block;
+    background-color: #373867;
+    width: 20%;
+    height: 7000px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  aside p {
+    max-width: 200px;
+    align-self: center;
+    padding-top: 50px;
+  }
+
+  ul {
+    text-transform: uppercase;
+    line-height: 50px;
+    font-size: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .why-mega {
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+  }
+
+  .why-mega p {
+    max-width: 300px;
+    font-size: 25px;
+    text-align: start;
+  }
+
+  .classes {
+    max-width: 1000px;
+    align-self: center;
+    margin-top: 50px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+  }
 }
