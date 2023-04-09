@@ -80,36 +80,36 @@
         <h3>Mega Rocket Membership</h3>
       </div>
       <section class="membership">
-        <article class="only-classes">
-          <img src="../Assets/Images/kid-membership.png" alt="img only classes">
-          <h4>Only Classes</h4>
-          <h5>Membership</h5>
-          <p>✔ Free access to classes prior registration</p>
-          <p>✔ Grid display</p>
-          <p class="text-01">Cheaper for you, and great for starting</p>
-          <button type="button">Suscribe!</button>
-        </article>
-        <article class="classic">
-          <img src="../Assets/Images/clasic-membership.png" alt="img classic">
-          <h4>Classic</h4>
-          <h5>Membership</h5>
-          <p>✔ Free access to the weight room</p>
-          <p>✔ Personalized follow up by a trainer</p>
-          <p>✔ Grid display</p>
-          <p class="text-02">With this membership, you can have anything you need and more!</p>
-          <button type="button">Join Now!</button>
-        </article>
-        <article class="black">
-          <img src="../Assets/Images/black-membership.png" alt="img black membership">
-          <h4>Black</h4>
-          <h5>Membership</h5>
-          <p>✔ Free access to the weight room</p>
-          <p>✔ Free access to classes prior registration</p>
-          <p>✔ Personalized follow up by a trainer</p>
-          <p>✔ Grid display</p>
-          <p class="text-03">If you want to be THE BEST, this is the membership for you.</p>
-          <button type="button">Go All-In!</button>
-        </article>
+        <div class="only-classes">
+            <img src="../Assets/Images/kid-membership.png" alt="img only classes">
+            <h4>Only Classes</h4>
+            <h5>Membership</h5>
+            <p>✔ Free access to classes prior registration</p>
+            <p>✔ Grid display</p>
+            <p class="text-01">Cheaper for you, and great for starting</p>
+            <button type="button">Suscribe!</button>
+        </div>
+        <div class="classic">
+            <img src="../Assets/Images/clasic-membership.png" alt="img classic">
+            <h4>Classic</h4>
+            <h5>Membership</h5>
+            <p>✔ Free access to the weight room</p>
+            <p>✔ Personalized follow up by a trainer</p>
+            <p>✔ Grid display</p>
+            <p class="text-02">With this membership, you can have anything you need and more!</p>
+            <button type="button">Join Now!</button>
+        </div>
+        <div class="black">
+            <img src="../Assets/Images/black-membership.png" alt="img black membership">
+            <h4>Black</h4>
+            <h5>Membership</h5>
+            <p>✔ Free access to the weight room</p>
+            <p>✔ Free access to classes prior registration</p>
+            <p>✔ Personalized follow up by a trainer</p>
+            <p>✔ Grid display</p>
+            <p class="text-03">If you want to be THE BEST, this is the membership for you.</p>
+            <button type="button">Go All-In!</button>
+        </div>
       </section>
       <section class="universe">
         <article class="art-reservation">
@@ -152,24 +152,26 @@
       <section class="sec-form">
         <form>
           <h5>Got Any Questions?</h5>
-          <input type="radio" id="complain" name="question" value="complain">
-          <label for="complain"> I would like to do a complain</label>
-          <input type="radio" id="opinion" name="question" value="opinion">
-          <label for="opinion"> I would like to make a suggestion/opinion</label>
-          <div class="text-04">
+          <div class="sec-form-complain">
+            <input type="radio" id="complain" name="question" value="complain">
+            <label for="complain"> I would like to do a complain</label>
+          </div>
+          <div class="sec-form-opinion">
+            <input type="radio" id="opinion" name="question" value="opinion">
+            <label for="opinion"> I would like to make a suggestion/opinion</label>
+          </div>
+          <div class="sec-form-about">
             <input type="radio" id="about" name="question" value="about">
             <label for="about"> I would like to know more about Membership and Prices</label>
           </div>
-          <div class="name-sur">
-            <input type="text" placeholder="NAME">
-            <input type="text" placeholder="SURNAME">
+          <div class="sec-input">
+            <input class="input-name" type="text" placeholder="NAME">
+            <input class="input-surname" type="text" placeholder="SURNAME">
+            <input class="input-email" type="email" placeholder="EMAIL">
           </div>
-          <div class="d-email">
-            <input type="email" placeholder="EMAIL">
-          </div>
-          <div class="message">
+          <div class="sec-form-message">
             <label for="message">Write your message</label>
-            <textarea class="textarea" id="message" name="message" cols="30" rows="10" placeholder="..."></textarea>
+            <textarea class="textarea" id="message" name="message" cols="40" rows="2" placeholder="..."></textarea>
           </div>
           <button type="submit">Submit</button>
         </form>

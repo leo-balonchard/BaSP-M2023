@@ -56,14 +56,14 @@ main img {
   padding-right: 50px;
 }
 
-.why-03 {
+.why-03, .mega-member {
   margin-top: 60px;
   background-color:#373867;
   width: 70%;
 }
 
-.why-03 h3 {
-  font-size: 25px;
+.why-03, .mega-member h3 {
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
   padding-top: 15px;
@@ -72,4 +72,167 @@ main img {
 }
 
 .classes img{
-padding: 15px;}
+  padding: 15px;
+}
+
+/* DESDE ACA */
+
+.membership {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #373867;
+}
+
+.membership h4 {
+  border-top: 40px solid rgba(114, 114, 117, 0.4);
+  padding-top: 30px;
+  color: #49A37B;
+  text-transform: uppercase;
+}
+
+.membership h5 {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.only-classes, .classic, .black {
+  padding: 40px;
+  border: 1px solid black;
+  margin-bottom: 50px;
+  max-width: 50%;
+  background-color: white;
+}
+
+.membership button {
+  margin-top: 50px;
+  background-color: #49A37B;
+  color: white;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-transform: uppercase;
+}
+
+/* HASTA ACA */
+
+.universe {
+  display: flex;
+  flex-direction: column;
+}
+
+.universe article {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.universe img {
+  max-width: 120px;
+}
+
+.universe h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.universe p {
+  padding-bottom: 40px;
+}
+
+.universe h5 {
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+
+.art-reservation {
+  background-color: #AACE9B;
+  color: white;
+}
+
+.art-membership {
+  background-color: #373867;
+  color: white;
+}
+
+.art-weekly {
+  background-color: white;
+  color: #373867;
+  }
+
+.art-contact {
+  background-color: rgb(97, 94, 95);
+  color: #373867;
+  }
+
+.sec-form {
+  background-color: white;
+  padding: 45px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  max-width: 300px;
+  align-self: center;
+  border-radius: 30px;
+  color: #373867;
+}
+
+.sec-form h5{
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+
+.sec-form button {
+  background-color: #AACE9B;
+  color: #373867;
+  padding: 5px 20px 5px 20px;
+  border-radius: 7px;
+  margin-top: 50px;
+}
+
+.sec-form-complain, .sec-form-opinion, .sec-form-about {
+  border: 1px solid #373867;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-size: 10px;
+  text-align: start;
+  padding: 10px 0px 10px 0px;
+}
+
+.sec-input {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sec-input input {
+  margin-right: 3px;
+  margin-right: 20px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+}
+
+.input-name, .input-surname {
+  width: 50px;
+  margin-right: 10px;
+  padding-right: 10px;
+  margin-bottom: 30px;
+}
+
+.input-name {
+  width: 25%;
+}
+
+.input-surname {
+  width: 45%;
+}
+
+.input-email {
+  width: 100%;
+}
+
+.sec-form-message {
+  text-align: start;
+}
