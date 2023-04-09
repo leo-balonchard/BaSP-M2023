@@ -75,8 +75,6 @@ main img {
   padding: 15px;
 }
 
-/* DESDE ACA */
-
 .membership {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -86,36 +84,64 @@ main img {
   color: #373867;
 }
 
+.container-img-only img {
+  width: 500px;
+}
+
 .membership h4 {
-  border-top: 40px solid rgba(114, 114, 117, 0.4);
+  border-top: 40px solid #b0b0bf;
   padding-top: 30px;
-  color: #49A37B;
   text-transform: uppercase;
+  width: 100%;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.only-classes h4, .classic h4 {
+  color: #AACE9B;
 }
 
 .membership h5 {
   text-transform: uppercase;
   margin-bottom: 40px;
+  padding-top: 7px;
+  font-weight: 500;
+  font-size: 30px;
 }
 
-.only-classes, .classic, .black {
-  padding: 40px;
-  border: 1px solid black;
+.membership ul {
+  font-size: 15px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.only-classes, .classic, .black{
   margin-bottom: 50px;
-  max-width: 50%;
+  max-width: 330px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-01, .text-02, .text-03 {
+  border-top: 1px solid #b0b0bf;
+  margin-top: 30px;
+  padding-top: 20px;
+  max-width: 75%;
+  text-align: start;
 }
 
 .membership button {
-  margin-top: 50px;
+  margin-top: 25px;
   background-color: #49A37B;
   color: white;
-  font-size: 15px;
+  font-size: 30px;
   padding: 10px 20px 10px 20px;
+  width: 100%;
   text-transform: uppercase;
+  border: none;
 }
-
-/* HASTA ACA */
 
 .universe {
   display: flex;
