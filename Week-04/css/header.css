@@ -10,13 +10,20 @@ header img {
   max-width: 50px;
 }
 
-.div-text-header {
+.text-header {
   font-size: 15px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.div-text-header p {
+.text-header p {
   font-size: 25px;
   font-weight: bold;
+}
+
+@media (min-width: 1025px){
+  header {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
 }

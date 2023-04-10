@@ -65,6 +65,7 @@ main img {
   margin-top: 60px;
   background-color:#373867;
   width: 70%;
+  max-width: 500px;
 }
 
 .why-03, .mega-member h3 {
@@ -119,7 +120,7 @@ main img {
 }
 
 .membership ul {
-  font-size: 15px;
+  font-size: 12px;
   line-height: 30px;
   text-align: left;
 }
@@ -200,7 +201,7 @@ main img {
   }
 
 .art-contact {
-  background-color: rgb(97, 94, 95);
+  background-color: #606062;
   color: #373867;
   }
 
@@ -275,6 +276,21 @@ main img {
   text-align: start;
 }
 
+.art-reservation, .art-membership, .art-weekly, .art-contact {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px 50px 0px;
+}
+
+.art-reservation img, .art-membership img, .art-weekly img, .art-contact img {
+  margin-left: 60px;
+  align-self: center;
+}
+
+.universe-container {
+  width: 50%;
+}
+
 @media (min-width: 601px) {
 
   .why-mega img{
@@ -296,7 +312,7 @@ main img {
     display: block;
     background-color: #373867;
     width: 20%;
-    height: 7000px;
+    height: 5300px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -343,8 +359,18 @@ main img {
     margin-top: 50px;
   }
 
+  .membership {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .membership div {
+    margin-right: 20px;
+  }
+
   main {
     display: flex;
     flex-direction: row;
   }
+
 }
