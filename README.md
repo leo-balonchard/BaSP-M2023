@@ -6,8 +6,6 @@ In the first phase, which took place in the first week, we discussed with the wh
 
 We will take care from the figma design to the full development of the functionalities, so we will also work on the backend of the project to make it work properly.
 
-<img src="../BaSP-M2023/Assets/Images/page.png" alt="react"/>
-
 ## Week 01
 
 
