@@ -4,12 +4,45 @@ main {
   text-align: center;
 }
 
-aside {
+.hidden-menu {
   display: none;
+  justify-content: center;
+  position: absolute;
+  top: 92px;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  background-color: #373867;
 }
 
-main img {
-  max-width: 70%;
+aside {
+  display: none;
+  background-color: #373867;
+  width: 20%;
+  color: white;
+  padding-top: 50px;
+}
+
+aside p {
+  max-width: 200px;
+  align-self: center;
+  padding-top: 50px;
+}
+
+ul {
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  position: sticky;
+  top: 200px;
 }
 
 .container {
@@ -19,7 +52,6 @@ main img {
 
 .why-mega img{
   display: none;
-  width: 600px;
 }
 
 .our-philo {
@@ -61,14 +93,14 @@ main img {
   padding-right: 50px;
 }
 
-.why-03, .mega-member {
+.join-activities, .mega-member {
   margin-top: 60px;
   background-color:#373867;
   width: 70%;
   max-width: 500px;
 }
 
-.why-03, .mega-member h3 {
+.join-activities, .mega-member h3 {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
@@ -77,12 +109,62 @@ main img {
   color: white;
 }
 
-.why-03 {
+.join-activities {
   margin-bottom: 50px;
 }
 
 .classes img{
   padding: 15px;
+}
+
+.activities {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  align-items: center;
+  color: white;
+}
+
+.activities h3 {
+  font-size: 30px;
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+
+.activities div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.img-activities {
+  background-size: cover;
+}
+
+.img-crossfit {
+  background-image: url("../../Assets/Images/crossfit.png");
+}
+
+.img-spinning {
+  background-image: url("../../Assets/Images/spinning.png");
+}
+
+.img-functional {
+  background-image: url("../../Assets/Images/funcional.png");
+}
+
+.img-boxing {
+  background-image: url("../../Assets/Images/boxi.png");
+}
+
+.img-training {
+  background-image: url("../../Assets/Images/musculacion.png");
 }
 
 .membership {
@@ -95,8 +177,8 @@ main img {
 }
 
 .membership img {
-  width: 500px;
-}
+  width: 300px;
+  padding-left: 22px;}
 
 .membership h4 {
   border-top: 40px solid #b0b0bf;
@@ -125,13 +207,15 @@ main img {
   text-align: left;
 }
 
-.only-classes, .classic, .black{
-  margin-bottom: 50px;
-  width: 330px;
+.sec-membership {
   background-color: white;
+  margin-bottom: 50px;
+  width: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  margin: -10% 10% 10% 10%;
 }
 
 .text-01, .text-02, .text-03 {
@@ -159,10 +243,11 @@ main img {
   text-align: start;
 }
 
-.universe article {
+.art-universe {
   padding: 30px 50px 30px 50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .universe img {
@@ -276,21 +361,6 @@ main img {
   text-align: start;
 }
 
-.art-reservation, .art-membership, .art-weekly, .art-contact {
-  display: flex;
-  justify-content: center;
-  padding: 50px 0px 50px 0px;
-}
-
-.art-reservation img, .art-membership img, .art-weekly img, .art-contact img {
-  margin-left: 60px;
-  align-self: center;
-}
-
-.universe-container {
-  width: 50%;
-}
-
 @media (min-width: 601px) {
 
   .why-mega img{
@@ -304,37 +374,38 @@ main img {
     align-self: center;
   }
 
+  .activities {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .art-universe {
+    display: flex;
+    flex-direction: row;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .art-universe p {
+    max-width: 300px;
+    padding-right: 200px;
+  }
+
 }
 
 @media (min-width: 1025px){
 
   aside {
-    display: block;
-    background-color: #373867;
-    width: 20%;
-    height: 5300px;
-    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
   }
 
-  aside p {
+  .universe img {
     max-width: 200px;
     align-self: center;
-    padding-top: 50px;
-  }
-
-  ul {
-    text-transform: uppercase;
-    line-height: 50px;
-    font-size: 20px;
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
   }
 
   .container {
@@ -359,18 +430,32 @@ main img {
     margin-top: 50px;
   }
 
+  .membership div {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .membership img {
+    width: 300px;
+    padding-left: 0px;}
+
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
   .membership {
     flex-direction: row;
     justify-content: center;
   }
 
-  .membership div {
-    margin-right: 20px;
-  }
-
-  main {
-    display: flex;
-    flex-direction: row;
+  .activities div {
+    width: 425px;
+    height: 425px;
   }
 
 }
