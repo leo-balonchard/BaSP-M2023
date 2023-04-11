@@ -25,6 +25,9 @@ We had to work as a team of more than 10 people coordinating the different parts
 
 - This week we leave aside the idea of pixel perfect and we must make our page using flexbox, which is a novelty and helps us to save a lot of time, besides using much less lines. We must follow the mobile first model, besides designing for tablet and desktop.
 
+[MEGA ROCKET - GitHub Pages](https://leo-balonchard.github.io/BaSP-M2023/Week-04/index.html)
+
+
 ## Author
 ```
 - Leonardo Balonchard
