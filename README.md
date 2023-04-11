@@ -19,7 +19,7 @@ We had to work as a team of more than 10 people coordinating the different parts
 
 ## Week 03
 
-- In this new week we must style the HTML page we made working with CSS. We were instructed not to use flexbox so it must be in pixel perfect mode. We should use as reference a screen of 1512px wide. It cost me a lot to place each section in its place.
+- In this new week we must style the HTML page we made working with CSS. We were instructed not to use flexbox so it must be in pixel perfect mode. We should use as reference a screen of 1512 px wide. It cost me a lot to place each section in its place.
 
 ## Week 04
 
