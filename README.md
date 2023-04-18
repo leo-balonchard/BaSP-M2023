@@ -8,10 +8,8 @@ We will take care from the figma design to the full development of the functiona
 
 ## Week 01
 
-
 - We designed in figma a project for a gym called "MEGA ROCKET".
 We had to work as a team of more than 10 people coordinating the different parts of the project. We were not allowed to style the page, we just had to make the whole structure with HTML.
-
 
 ## Week 02
 
@@ -27,6 +25,11 @@ We had to work as a team of more than 10 people coordinating the different parts
 
 [MEGA ROCKET - GitHub Pages](https://leo-balonchard.github.io/BaSP-M2023/Week-04/index.html)
 
+## Week 05
+
+- This week we started to see javascript. We saw the basics to be able to apply it next week to the project.
+
+[Exercises Week 05 - GitHub Pages](https://leo-balonchard.github.io/BaSP-M2023/Week-05/index.html)
 
 ## Author
 ```
