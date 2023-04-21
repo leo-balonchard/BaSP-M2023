@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #373867;
+}
+
+header img {
+  max-width: 50px;
+}
+
+.text-header {
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.text-header p {
+  font-size: 25px;
+  font-weight: bold;
+}
