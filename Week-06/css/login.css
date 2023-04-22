@@ -1,0 +1,44 @@
+.login-button {
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+.login-button button{
+  border-radius: 5px;
+  padding: 10px 40px 10px 40px;
+  color: #373867;
+  font-weight: bold;
+  background-color: white;
+}
+
+.title-login {
+  background-color: #373867;
+  color: #373867;
+  padding: 25px 0px 25px 0px;
+}
+
+.title-login h2 {
+  color: white;
+  font-size: 25px;
+}
+
+.forgot a {
+  color: #373867;
+  font-size: small;
+}
+
+.login-input {
+  padding: 10px;
+}
+
+.input-login {
+  padding: 10px;
+}
+
+.remember {
+  padding-bottom: 10px;
+}
+
+@media  screen and (min-width: 1024px){
+
+}
