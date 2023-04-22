@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <title>Login</title>
+    <script defer src="../js/login.js"></script>
   </head>
   <body>
     <header>
@@ -57,13 +58,17 @@
         <div class="input-login">
           <div class="login-input login-input-email">
             <h2>Email</h2>
-            <input class="input-email" type="text" placeholder="EMAIL">
-            <p>Enter a valid email address</p>
+            <input class="input-email" id="email" name="email" type="text" placeholder="EMAIL">
+            <p id="message-default">Please enter your email address.</p>
+            <p class="email-success" id="email-success">Valid email address</p>
+            <span id="email-error" class="error-message"></span>
           </div>
           <div class="login-input login-input-password">
             <h2>Password</h2>
-            <input class="input-password" type="password" placeholder="PASSWORD">
-            <p>Enter your password</p>
+            <input class="input-password" id="password" name="password" type="password" placeholder="PASSWORD">
+            <p id="password-default">Enter your password</p>
+            <p class="password-success" id="password-success">The password format looks good</p>
+            <span id="password-error" class="error-message"></span>
           </div>
         </div>
         <div class="remember">
@@ -74,7 +79,7 @@
           <a href="../views/login.html">Forgot your password?</a>
         </div>
         <div class="login-button">
-          <button>Login</button>
+          <button id="login-button">Login</button>
         </div>
       </form>
     </main>

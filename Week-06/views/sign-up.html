@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/sign-up.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <title>Sign Up</title>
+    <script defer src="../js/sign-up.js"></script>
   </head>
   <body>
     <header>
@@ -56,58 +57,80 @@
         <div class="input-create">
           <div class="create-input create-input-name">
             <h2>Name</h2>
-            <input class="input-name" type="text" placeholder="NAME">
-            <p>Letters only and must have more than 3 letters.</p>
+            <input id="name" class="input-name" type="text" placeholder="NAME">
+            <p id="message-default-name">Letters only and must have more than 3 letters.</p>
+            <p class="success" id="name-success">The format looks good.</p>
+            <span id="name-error" class="error"></span>
           </div>
           <div class="create-input create-input-lastname">
             <h2>Lastname</h2>
-            <input class="input-lastname" type="text" placeholder="LASTNAME">
-            <p>Letters only and must have more than 3 letters.</p>
+            <input id="lastname" class="input-lastname" type="text" placeholder="LASTNAME">
+            <p id="message-default-lastname">Letters only and must have more than 3 letters.</p>
+            <p class="success" id="lastname-success">The format looks good.</p>
+            <span id="lastname-error" class="error"></span>
           </div>
           <div class="create-input create-input-id">
             <h2>ID Number</h2>
-            <input class="input-id" type="text" placeholder="ID NUMBER">
-            <p>Only numbers and must have more than 7 numbers.</p>
+            <input id="id-number" class="input-id" type="text" placeholder="ID NUMBER">
+            <p id="message-default-id">Only numbers and must have more than 7 numbers.</p>
+            <p class="success" id="id-success">The format looks good.</p>
+            <span id="id-error" class="error"></span>
           </div>
           <div class="create-input create-input-date">
             <h2>Date</h2>
-            <input class="input-date" type="date" placeholder="DATE OF BIRTH">
-            <p>With format dd/mm/yyyy.</p>
+            <input id="date" class="input-date" type="date" placeholder="DATE OF BIRTH">
+            <p id="message-default-date">With format dd/mm/yyyy.</p>
+            <p class="success" id="date-success">The format looks good.</p>
+            <span id="date-error" class="error"></span>
           </div>
           <div class="create-input create-input-phone">
             <h2>Phone</h2>
-            <input class="input-phone" type="text" placeholder="PHONE NUMBER">
-            <p>Only numbers and must have 10 numbers.</p>
+            <input id="phone" class="input-phone" type="text" placeholder="PHONE NUMBER">
+            <p id="message-default-phone">Only numbers and must have 10 numbers.</p>
+            <p class="success" id="phone-success">The format looks good.</p>
+            <span id="phone-error" class="error"></span>
           </div>
           <div class="create-input create-input-address">
             <h2>Address</h2>
-            <input class="input-address" type="text" placeholder="ADDRESS">
-            <p>At least 5 characters with letters, numbers and a space in between.</p>
+            <input id="address" class="input-address" type="text" placeholder="ADDRESS">
+            <p id="message-default-address">At least 5 characters with letters, numbers and a space in between.</p>
+            <p class="success" id="address-success">The format looks good.</p>
+            <span id="address-error" class="error"></span>
           </div>
           <div class="create-input create-input-city">
             <h2>City</h2>
-            <input class="input-city" type="text" placeholder="CITY">
-            <p>Alphanumeric text and must have more than 3 letters.</p>
+            <input id="city" class="input-city" type="text" placeholder="CITY">
+            <p id="message-default-city">Alphanumeric text and must have more than 3 letters.</p>
+            <p class="success" id="city-success">The format looks good.</p>
+            <span id="city-error" class="error"></span>
           </div>
           <div class="create-input create-input-code">
             <h2>Code</h2>
-            <input class="input-code" type="text" placeholder="POSTAL CODE">
-            <p>Only numbers and must have between 4 and 5 numbers.</p>
+            <input id="code" class="input-code" type="text" placeholder="POSTAL CODE">
+            <p id="message-default-code">Only numbers and must have between 4 and 5 numbers.</p>
+            <p class="success" id="code-success">The format looks good.</p>
+            <span id="code-error" class="error"></span>
           </div>
           <div class="create-input create-input-email">
             <h2>Email</h2>
-            <input class="input-email" type="text" placeholder="EMAIL">
-            <p>Must have a valid email format.</p>
+            <input id="email" class="input-email" type="text" placeholder="EMAIL">
+            <p id="message-default-email">Must have a valid email format.</p>
+            <p class="success" id="email-success">The format looks good.</p>
+            <span id="email-error" class="error"></span>
           </div>
           <div class="create-input create-input-password">
             <h2>Password</h2>
-            <input class="input-password" type="password" placeholder="PASSWORD">
-            <p>At least 8 characters, consisting of letters and numbers.</p>
+            <input id="password" class="input-password" type="password" placeholder="PASSWORD">
+            <p id="message-default-password">At least 8 characters, consisting of letters and numbers.</p>
+            <p class="success" id="password-success">The format looks good.</p>
+            <span id="password-error" class="error"></span>
           </div>
           <div class="create-input create-input-confirm">
             <h2>Confirm Password</h2>
-            <input class="input-confirm" type="password" placeholder="CONFIRM PASSWORD">
-            <p>At least 8 characters, consisting of letters and numbers.</p>
+            <input id="confirm-password" class="input-confirm" type="password" placeholder="CONFIRM PASSWORD">
+            <p id="message-default-confirm">At least 8 characters, consisting of letters and numbers.</p>
+            <p class="success" id="confirm-success">The format looks good.</p>
+            <span id="confirm-error" class="error"></span>
           </div>
         </div>
         <div class="member-create">
@@ -125,7 +148,7 @@
           </div>
         </div>
         <div class="member-button">
-          <button>Register</button>
+          <button id="register-btn">Register</button>
         </div>
       </form>
     </main>

@@ -39,6 +39,11 @@
   padding-bottom: 10px;
 }
 
+.email-success, .password-success {
+  display: none;
+  color: green;
+}
+
 @media  screen and (min-width: 1024px){
 
 }

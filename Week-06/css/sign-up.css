@@ -74,6 +74,11 @@ form {
     padding: 5px 0px 5px 5px;
 }
 
+.success {
+  display: none;
+  color: green;
+}
+
 .member-create {
   background-color: white;
   padding: 10px 0px 10px 0px;
