@@ -46,4 +46,14 @@
 
 @media  screen and (min-width: 1024px){
 
+  form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .login-form {
+    width: 500px;
+    border: solid 1px black;
+  }
+
 }
