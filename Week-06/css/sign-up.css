@@ -98,6 +98,17 @@ form {
   background-color: white;
 }
 
+.new {
+  display: flex;
+  flex-direction: column;
+}
+
+.new a {
+  color: #373867;
+  padding-bottom: 5px;
+  font-weight: 300;
+}
+
 @media  screen and (min-width: 1024px){
 
   aside {
