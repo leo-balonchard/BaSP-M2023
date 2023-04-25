@@ -35,7 +35,7 @@ We had to work as a team of more than 10 people coordinating the different parts
 
 - This week we had to make the login page and the registration page, then we had to validate several fields in each of them to finally display an alert if completed or not satisfactorily.
 
-[Week 06 Validations JS - GitHub Pages](https://leo-balonchard.github.io/BaSP-M2023/Week-06/index.html)
+[Week 06 Validations JS - GitHub Pages](https://leo-balonchard.github.io/BaSP-M2023/Week-06/views/index.html)
 
 ## Author
 ```
