@@ -393,77 +393,84 @@ emailInput.addEventListener('focus', function() {
 
 function validatePassword() {
   var passwordValue = passwordInput.value.trim();
-  var validPassword = true;
+  var hasLetter = false;
+  var hasNumber = false;
+  var hasSpecialCharacter = false;
+  var length = passwordValue.length;
 
-  if (passwordValue.length < 8) {
-    passwordError.textContent = 'Please enter a valid password (minimum 8 characters).';
-    validPassword = false;
-  } else {
-    for (var i = 0; i < passwordValue.length; i++) {
-      if (lettersAndNumbers.indexOf(passwordValue[i].toUpperCase()) === -1) {
-        passwordError.textContent = 'Please enter a valid password (only letters and numbers allowed).';
-        validPassword = false;
-        break;
-      }
+  for (var i = 0; i < length; i++) {
+    var charCode = passwordValue.charCodeAt(i);
+    if ((charCode >= 48 && charCode <= 57)) {
+      hasNumber = true;
+    } else if ((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122)) {
+      hasLetter = true;
+    } else {
+      hasSpecialCharacter = true;
     }
   }
-
-  if (validPassword) {
-    passwordError.style.display = 'none';
-    removeMessagePassword.style.display = 'none';
-    passwordSuccess.style.display = 'block';
-    return true;
-  } else {
+  if (length < 8 || !hasLetter || !hasNumber || hasSpecialCharacter) {
+    passwordError.textContent = (length < 8 || hasSpecialCharacter) ?
+      'Please enter a valid password (minimum 8 characters, letters and numbers only).' :
+      'Please enter a valid password (minimum 8 characters, must include at least one letter and one number).';
     passwordError.style.display = 'block';
     passwordError.style.color = 'red';
     removeMessagePassword.style.display = 'none';
     passwordSuccess.style.display = 'none';
     return false;
   }
+  passwordError.style.display = 'none';
+  removeMessagePassword.style.display = 'none';
+  passwordSuccess.style.display = 'block';
+  return true;
 }
 
-passwordInput.addEventListener('blur', validatePassword);
+passwordInput.addEventListener('input', validatePassword);
 passwordInput.addEventListener('focus', function() {
   passwordError.style.display = 'none';
+  passwordSuccess.style.display = 'none';
   removeMessagePassword.style.display = 'block';
 });
 
 function validateConfirm() {
   var confirmValue = confirmInput.value.trim();
-  var validConfirm = true;
+  var hasLetter = false;
+  var hasNumber = false;
+  var hasSpecialCharacter = false;
+  var length = confirmValue.length;
 
-  if (confirmValue.length < 8) {
-    confirmError.textContent = 'Please enter a valid confirm (minimum 8 characters).';
-    validConfirm = false;
-  } else {
-    for (var i = 0; i < confirmValue.length; i++) {
-      if (lettersAndNumbers.indexOf(confirmValue[i].toUpperCase()) === -1) {
-        confirmError.textContent = 'Please enter a valid confirm (only letters and numbers allowed).';
-        validConfirm = false;
-        break;
-      }
+  for (var i = 0; i < length; i++) {
+    var charCode = confirmValue.charCodeAt(i);
+    if ((charCode >= 48 && charCode <= 57)) {
+      hasNumber = true;
+    } else if ((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122)) {
+      hasLetter = true;
+    } else {
+      hasSpecialCharacter = true;
     }
   }
-
-  if (validConfirm) {
-    confirmError.style.display = 'none';
-    removeMessageConfirm.style.display = 'none';
-    confirmSuccess.style.display = 'block';
-    return true;
-  } else {
+  if (length < 8 || !hasLetter || !hasNumber || hasSpecialCharacter) {
+    confirmError.textContent = (length < 8 || hasSpecialCharacter) ?
+      'Please enter a valid confirm (minimum 8 characters, letters and numbers only).' :
+      'Please enter a valid confirm (minimum 8 characters, must include at least one letter and one number).';
     confirmError.style.display = 'block';
     confirmError.style.color = 'red';
     removeMessageConfirm.style.display = 'none';
     confirmSuccess.style.display = 'none';
     return false;
   }
+  confirmError.style.display = 'none';
+  removeMessageConfirm.style.display = 'none';
+  confirmSuccess.style.display = 'block';
+  return true;
 }
 
-confirmInput.addEventListener('blur', validateConfirm);
+confirmInput.addEventListener('input', validateConfirm);
 confirmInput.addEventListener('focus', function() {
   confirmError.style.display = 'none';
+  confirmSuccess.style.display = 'none';
   removeMessageConfirm.style.display = 'block';
 });
+
 
 submitButton.addEventListener('click', function() {
   var nameIsValid = validateName();
