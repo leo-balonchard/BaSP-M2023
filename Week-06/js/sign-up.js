@@ -1,12 +1,57 @@
-// name
-
 var nameInput = document.getElementById('name');
 var nameError = document.getElementById('name-error');
-var removeMessage = document.getElementById('message-default-name');
+var removeMessageName = document.getElementById('message-default-name');
 var nameSuccess = document.getElementById('name-success');
-
+var lastnameInput = document.getElementById('lastname');
+var lastnameError = document.getElementById('lastname-error');
+var removeMessageLastname = document.getElementById('message-default-lastname');
+var lastnameSuccess = document.getElementById('lastname-success');
+var idInput = document.getElementById('id-number');
+var idError = document.getElementById('id-error');
+var removeMessageId = document.getElementById('message-default-id');
+var idSuccess = document.getElementById('id-success');
+var dateInput = document.getElementById('date');
+var dateError = document.getElementById('date-error');
+var removeMessageDate = document.getElementById('message-default-date');
+var dateSuccess = document.getElementById('date-success');
+var phoneInput = document.getElementById('phone');
+var phoneError = document.getElementById('phone-error');
+var removeMessagePhone = document.getElementById('message-default-phone');
+var phoneSuccess = document.getElementById('phone-success');
+var addressInput = document.getElementById('address');
+var addressError = document.getElementById('address-error');
+var removeMessageAddress = document.getElementById('message-default-address');
+var addressSuccess = document.getElementById('address-success');
+var cityInput = document.getElementById('city');
+var cityError = document.getElementById('city-error');
+var removeMessageCity = document.getElementById('message-default-city');
+var citySuccess = document.getElementById('city-success');
+var codeInput = document.getElementById('code');
+var codeError = document.getElementById('code-error');
+var removeMessageCode = document.getElementById('message-default-code');
+var codeSuccess = document.getElementById('code-success');
+var emailInput = document.getElementById('email');
+var emailError = document.getElementById('email-error');
+var removeMessageEmail = document.getElementById('message-default-email');
+var emailSuccess = document.getElementById('email-success');
+var passwordInput = document.getElementById('password');
+var passwordError = document.getElementById('password-error');
+var removeMessagePassword = document.getElementById('message-default-password');
+var passwordSuccess = document.getElementById('password-success');
+var confirmInput = document.getElementById('confirm-password');
+var confirmError = document.getElementById('confirm-error');
+var removeMessageConfirm = document.getElementById('message-default-confirm');
+var confirmSuccess = document.getElementById('confirm-success');
 var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
 'm', 'n', 'ñ', 'o', 'p', 'q', 'r', 's','t', 'u', 'v', 'w', 'x', 'y', 'z'];
+var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+var alphanumeric = 'abcdefghijklmnñopqrstuvwxyz0123456789';
+var lettersAndNumbers = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
+'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S','T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1',
+'2', '3', '4', '5', '6', '7', '8', '9'];
+var allowedChars = alphanumeric + ' ';
+var submitButton = document.getElementById('register-btn');
+
 
 function validateName() {
   var nameValue = nameInput.value.trim().toLowerCase();
@@ -27,13 +72,13 @@ function validateName() {
 
   if (validName) {
     nameError.style.display = 'none';
-    removeMessage.style.display = 'none';
+    removeMessageName.style.display = 'none';
     nameSuccess.style.display = 'block';
     return true;
   } else {
     nameError.style.display = 'block';
     nameError.style.color = 'red';
-    removeMessage.style.display = 'none';
+    removeMessageName.style.display = 'none';
     nameSuccess.style.display = 'none';
     return false;
   }
@@ -42,15 +87,8 @@ function validateName() {
 nameInput.addEventListener('blur', validateName);
 nameInput.addEventListener('focus', function() {
   nameError.style.display = 'none';
-  removeMessage.style.display = 'block';
+  removeMessageName.style.display = 'block';
 });
-
-// lastname
-
-var lastnameInput = document.getElementById('lastname');
-var lastnameError = document.getElementById('lastname-error');
-var removeMessageLastname = document.getElementById('message-default-lastname');
-var lastnameSuccess = document.getElementById('lastname-success');
 
 function validateLastname() {
   var lastnameValue = lastnameInput.value.trim().toLowerCase();
@@ -89,15 +127,6 @@ lastnameInput.addEventListener('focus', function() {
   removeMessageLastname.style.display = 'block';
 });
 
-// ID Number
-
-var idInput = document.getElementById('id-number');
-var idError = document.getElementById('id-error');
-var removeMessageId = document.getElementById('message-default-id');
-var idSuccess = document.getElementById('id-success');
-
-var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-
 function validateId() {
   var idValue = idInput.value.trim();
   var validId = true;
@@ -134,13 +163,6 @@ idInput.addEventListener('focus', function() {
   idError.style.display = 'none';
   removeMessageId.style.display = 'block';
 });
-
-// date
-
-var dateInput = document.getElementById('date');
-var dateError = document.getElementById('date-error');
-var removeMessageDate = document.getElementById('message-default-date');
-var dateSuccess = document.getElementById('date-success');
 
 function validateDate() {
   var dateValue = dateInput.value.trim();
@@ -180,13 +202,6 @@ dateInput.addEventListener('focus', function() {
   removeMessageDate.style.display = 'block';
 });
 
-// phone
-
-var phoneInput = document.getElementById('phone');
-var phoneError = document.getElementById('phone-error');
-var removeMessagePhone = document.getElementById('message-default-phone');
-var phoneSuccess = document.getElementById('phone-success');
-
 function validatePhone() {
   var phoneValue = phoneInput.value.trim();
   var validPhone = true;
@@ -223,13 +238,6 @@ phoneInput.addEventListener('focus', function() {
   phoneError.style.display = 'none';
   removeMessagePhone.style.display = 'block';
 });
-
-// address
-
-var addressInput = document.getElementById('address');
-var addressError = document.getElementById('address-error');
-var removeMessageAddress = document.getElementById('message-default-address');
-var addressSuccess = document.getElementById('address-success');
 
 function validateAddress() {
   var addressValue = addressInput.value.trim().toLowerCase();
@@ -284,16 +292,6 @@ addressInput.addEventListener('focus', function() {
   removeMessageAddress.style.display = 'block';
 });
 
-// city
-
-var cityInput = document.getElementById('city');
-var cityError = document.getElementById('city-error');
-var removeMessage = document.getElementById('message-default-city');
-var citySuccess = document.getElementById('city-success');
-
-var alphanumeric = 'abcdefghijklmnñopqrstuvwxyz0123456789';
-var allowedChars = alphanumeric + ' ';
-
 function validateCity() {
   var cityValue = cityInput.value.trim().toLowerCase();
   var validCity = true;
@@ -313,13 +311,13 @@ function validateCity() {
 
   if (validCity) {
     cityError.style.display = 'none';
-    removeMessage.style.display = 'none';
+    removeMessageCity.style.display = 'none';
     citySuccess.style.display = 'block';
     return true;
   } else {
     cityError.style.display = 'block';
     cityError.style.color = 'red';
-    removeMessage.style.display = 'none';
+    removeMessageCity.style.display = 'none';
     citySuccess.style.display = 'none';
     return false;
   }
@@ -328,14 +326,8 @@ function validateCity() {
 cityInput.addEventListener('blur', validateCity);
 cityInput.addEventListener('focus', function() {
   cityError.style.display = 'none';
-  removeMessage.style.display = 'block';
+  removeMessageCity.style.display = 'block';
 });
-
-// code
-var codeInput = document.getElementById('code');
-var codeError = document.getElementById('code-error');
-var removeMessageCode = document.getElementById('message-default-code');
-var codeSuccess = document.getElementById('code-success');
 
 function validateCode() {
   var codeValue = codeInput.value.trim();
@@ -374,44 +366,30 @@ codeInput.addEventListener('focus', function() {
   removeMessageCode.style.display = 'block';
 });
 
-// email
-
-var emailInput = document.getElementById('email');
-var emailError = document.getElementById('email-error');
-var removeMessageEmail = document.getElementById('message-default-email');
-var emailSuccess = document.getElementById('email-success');
-
-emailInput.addEventListener('blur', function() {
-  var emailValue = this.value.trim();
-  var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/ ;
+function validateEmail() {
+  var emailValue = emailInput.value.trim();
+  var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
 
   if (!emailExpression.test(emailValue)) {
-    emailError.textContent = 'Error: please enter a valid email address.';
+    emailError.textContent = 'Please enter a valid email address.';
     emailError.style.display = 'block';
     emailError.style.color = 'red';
     removeMessageEmail.style.display = 'none';
     emailSuccess.style.display = 'none';
-  } else {
-    emailError.style.display = 'none';
-    removeMessageEmail.style.display = 'none';
-    emailSuccess.style.display = 'block';
+    return false;
   }
-});
+  emailError.style.display = 'none';
+  removeMessageEmail.style.display = 'none';
+  emailSuccess.style.display = 'block';
+  return true;
+}
 
+emailInput.addEventListener('blur', validateEmail);
 emailInput.addEventListener('focus', function() {
   emailError.style.display = 'none';
+  emailSuccess.style.display = 'none';
+  removeMessageEmail.style.display = 'block';
 });
-
-// password
-
-var passwordInput = document.getElementById('password');
-var passwordError = document.getElementById('password-error');
-var removeMessagePassword = document.getElementById('message-default-password');
-var passwordSuccess = document.getElementById('password-success');
-
-var lettersAndNumbers = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
-'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S','T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1',
-'2', '3', '4', '5', '6', '7', '8', '9'];
 
 function validatePassword() {
   var passwordValue = passwordInput.value.trim();
@@ -450,13 +428,6 @@ passwordInput.addEventListener('focus', function() {
   removeMessagePassword.style.display = 'block';
 });
 
-// confirm password
-
-var confirmInput = document.getElementById('confirm-password');
-var confirmError = document.getElementById('confirm-error');
-var removeMessageConfirm = document.getElementById('message-default-confirm');
-var confirmSuccess = document.getElementById('confirm-success');
-
 function validateConfirm() {
   var confirmValue = confirmInput.value.trim();
   var validConfirm = true;
@@ -494,4 +465,71 @@ confirmInput.addEventListener('focus', function() {
   removeMessageConfirm.style.display = 'block';
 });
 
-// validar boton
+submitButton.addEventListener('click', function() {
+  var nameIsValid = validateName();
+  var lastnameIsValid = validateLastname();
+  var idIsValid = validateId();
+  var dateIsValid = validateDate();
+  var phoneIsValid = validatePhone();
+  var addressIsValid = validateAddress();
+  var cityIsValid = validateCity();
+  var codeIsValid = validateCode();
+  var emailIsValid = validateEmail();
+  var passwordIsValid = validatePassword();
+  var confirmIsValid = validateConfirm();
+
+  if (nameIsValid && lastnameIsValid && idIsValid && dateIsValid && phoneIsValid && addressIsValid && cityIsValid
+    && codeIsValid && emailIsValid && passwordIsValid && confirmIsValid) {
+    var nameValue = nameInput.value.trim();
+    var lastnameValue = lastnameInput.value.trim();
+    var idValue = idInput.value.trim();
+    var dateValue = dateInput.value.trim();
+    var phoneValue = phoneInput.value.trim();
+    var addressValue = addressInput.value.trim();
+    var cityValue = cityInput.value.trim();
+    var codeValue = codeInput.value.trim();
+    var emailValue = emailInput.value.trim();
+    var passwordValue = passwordInput.value.trim();
+    var confirmValue = confirmInput.value.trim();
+
+    alert('The registration was successful\nName: ' + nameValue + '\nLastname: ' + lastnameValue + '\nID: ' + idValue +
+    '\nDate: ' + dateValue + '\nPhone: ' + phoneValue + '\nAddress: ' + addressValue + '\nCity: ' + cityValue +
+    '\nCode: ' + codeValue + '\nEmail: ' + emailValue + '\nPassword: ' + passwordValue + '\nConfirm: ' + confirmValue);
+  } else {
+    var errorMessage = '';
+    if (!nameIsValid) {
+      errorMessage += 'Please enter a valid name.\n';
+    }
+    if (!lastnameIsValid) {
+      errorMessage += 'Please enter a valid lastname.\n';
+    }
+    if (!idIsValid) {
+      errorMessage += 'Please enter a valid ID.\n';
+    }
+    if (!dateIsValid) {
+      errorMessage += 'Please enter a valid date.\n';
+    }
+    if (!phoneIsValid) {
+      errorMessage += 'Please enter a valid phone number.\n';
+    }
+    if (!addressIsValid) {
+      errorMessage += 'Please enter a valid address.\n';
+    }
+    if (!cityIsValid) {
+      errorMessage += 'Please enter a valid city.\n';
+    }
+    if (!codeIsValid) {
+      errorMessage += 'Please enter a valid code.\n';
+    }
+    if (!emailIsValid) {
+      errorMessage += 'Please enter a valid email address.\n';
+    }
+    if (!passwordIsValid) {
+      errorMessage += 'Please enter a valid password.\n';
+    }
+    if (!confirmIsValid) {
+      errorMessage += 'Please confirm your password.\n';
+    }
+    alert(errorMessage);
+  }
+});
