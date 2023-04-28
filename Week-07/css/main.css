@@ -1,0 +1,493 @@
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+aside {
+  display: none;
+  width: 20%;
+  padding-top: 50px;
+  background-color: #373867;
+  color: white;
+}
+
+aside p {
+  align-self: center;
+  max-width: 200px;
+  padding-top: 50px;
+}
+
+ul {
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  position: sticky;
+  top: 200px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.why-mega img{
+  display: none;
+}
+
+.our-philo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
+  background-image: url(../../Assets/Images/blue-gym-banner.png);
+  background-size: cover;
+  background-position: top center;
+  color: white;
+}
+
+.our-philo h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.our-philo p {
+  padding: 50px;
+  font-size: 15px;
+}
+
+.why-mega {
+  color: #373867;
+}
+
+.why-mega h2 {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.why-mega p {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.join-activities, .mega-member {
+  margin-top: 60px;
+  width: 70%;
+  max-width: 500px;
+  background-color:#373867;
+}
+
+.join-activities, .mega-member h3 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+.join-activities {
+  margin-bottom: 50px;
+}
+
+.classes img{
+  padding: 15px;
+}
+
+.activities {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  color: white;
+}
+
+.activities h3 {
+  font-size: 30px;
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+
+.activities div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.img-activities {
+  background-size: cover;
+}
+
+.img-crossfit {
+  background-image: url("../../Assets/Images/crossfit.png");
+}
+
+.img-spinning {
+  background-image: url("../../Assets/Images/spinning.png");
+}
+
+.img-functional {
+  background-image: url("../../Assets/Images/funcional.png");
+}
+
+.img-boxing {
+  background-image: url("../../Assets/Images/boxi.png");
+}
+
+.img-training {
+  background-image: url("../../Assets/Images/musculacion.png");
+}
+
+.membership {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: #373867;
+}
+
+.membership img {
+  width: 300px;
+  padding-left: 22px;}
+
+.membership h4 {
+  padding-top: 30px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+  border-top: 40px solid #b0b0bf;
+}
+
+.only-classes h4, .classic h4 {
+  color: #AACE9B;
+}
+
+.membership h5 {
+  margin-bottom: 40px;
+  padding-top: 7px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.membership ul {
+  font-size: 12px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.sec-membership {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+  width: 280px;
+  margin: -10% 10% 10% 10%;
+  background-color: white;
+}
+
+.text-01, .text-02, .text-03 {
+  margin-top: 30px;
+  padding-top: 20px;
+  max-width: 75%;
+  border-top: 1px solid #b0b0bf;
+  text-align: start;
+}
+
+.membership button {
+  margin-top: 25px;
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+  background-color: #49A37B;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+}
+
+.universe {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.art-universe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 50px 30px 50px;
+
+}
+
+.universe img {
+  align-self: center;
+  max-width: 120px;
+}
+
+.universe h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.universe p {
+  padding-bottom: 40px;
+}
+
+.universe h5 {
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+
+.art-reservation {
+  background-color: #AACE9B;
+  color: white;
+}
+
+.art-membership {
+  background-color: #373867;
+  color: white;
+}
+
+.art-weekly {
+  background-color: white;
+  color: #373867;
+  }
+
+.art-contact {
+  background-color: #606062;
+  color: #373867;
+  }
+
+.sec-form {
+  padding: 45px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  max-width: 300px;
+  align-self: center;
+  background-color: white;
+  color: #373867;
+  border-radius: 30px;
+}
+
+.sec-form h5{
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.sec-form button {
+  padding: 5px 20px 5px 20px;
+  margin-top: 50px;
+  background-color: #AACE9B;
+  color: #373867;
+  border-radius: 7px;
+}
+
+.sec-form-complain, .sec-form-opinion, .sec-form-about {
+  margin-top: 30px;
+  padding: 10px 0px 10px 0px;
+  font-size: 10px;
+  text-align: start;
+  border: 1px solid #373867;
+  border-radius: 5px;
+}
+
+.sec-input {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.sec-input input {
+  margin-right: 20px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+}
+
+.input-name, .input-surname {
+  width: 50px;
+  margin-bottom: 30px;
+}
+
+.input-name {
+  width: 25%;
+  margin-left: 30px;
+}
+
+.input-surname {
+  width: 35%;
+}
+
+.input-email {
+  width: 70%;
+  margin-left: 30px;
+}
+
+.sec-form-message {
+  text-align: start;
+}
+
+.new {
+  display: flex;
+  flex-direction: column;
+}
+
+.new a {
+  color: #373867;
+  padding-bottom: 5px;
+  font-weight: 300;
+}
+
+@media  screen and (min-width: 600px) {
+
+  .why-mega img{
+    display: inline-block;
+    max-width: 250px;
+    padding-right: 40px;
+  }
+
+  .why-mega {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+  }
+
+  .our-philo p {
+    align-self: center;
+    max-width: 550px;
+    padding: 50px;
+    font-size: 20px;
+  }
+
+  .activities {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .art-universe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+  }
+
+  .art-universe p {
+    max-width: 300px;
+    padding-right: 200px;
+  }
+
+  .sec-form {
+    max-width: 440px;
+  }
+
+  .sec-form-complain, .sec-form-opinion {
+    display: inline;
+    margin: 5px;
+    width: 48%;
+  }
+
+  .sec-form-about {
+    width: 70%;
+    margin-left: 60px;
+  }
+
+  .input-name, .input-email {
+    margin-left: 55px;
+  }
+
+}
+
+@media  screen and (min-width: 1024px){
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-mega img{
+    max-width: 450px;
+  }
+
+  .universe img {
+    max-width: 200px;
+    align-self: center;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .why-mega {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+  }
+
+  .why-mega p {
+    max-width: 300px;
+    font-size: 25px;
+    text-align: start;
+  }
+
+  .classes {
+    align-self: center;
+    max-width: 1000px;
+    margin-top: 50px;
+  }
+
+  .membership div {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .membership img {
+    width: 300px;
+    padding-left: 0px;}
+
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+@media  screen and (min-width: 1200px) {
+
+  .membership {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .activities div {
+    width: 425px;
+    height: 425px;
+  }
+
+}

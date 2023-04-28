@@ -424,7 +424,7 @@ function validatePassword() {
   return true;
 }
 
-passwordInput.addEventListener('input', validatePassword);
+passwordInput.addEventListener('blur', validatePassword);
 passwordInput.addEventListener('focus', function() {
   passwordError.style.display = 'none';
   passwordSuccess.style.display = 'none';
@@ -464,7 +464,7 @@ function validateConfirm() {
   return true;
 }
 
-confirmInput.addEventListener('input', validateConfirm);
+confirmInput.addEventListener('blur', validateConfirm);
 confirmInput.addEventListener('focus', function() {
   confirmError.style.display = 'none';
   confirmSuccess.style.display = 'none';

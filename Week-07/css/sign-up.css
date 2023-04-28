@@ -1,0 +1,154 @@
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+aside {
+  display: none;
+  width: 20%;
+  padding-top: 50px;
+  background-color: #373867;
+  color: white;
+}
+
+aside p {
+  align-self: center;
+  max-width: 200px;
+  padding-top: 50px;
+}
+
+ul {
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  position: sticky;
+  top: 200px;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+
+form {
+  background-color: whitesmoke;
+  padding: 50px;
+  color: #373867;
+}
+
+.create-account p {
+  padding-bottom: 5px;
+}
+
+.title-create {
+  background-color: #373867;
+  color: #373867;
+  padding: 40px 0px 40px 0px;
+}
+
+.title-create h2 {
+  color: white;
+  font-size: 25px;
+}
+
+.input-create {
+  background-color: whitesmoke;
+  padding: 10px 0px 10px 0px;
+}
+
+.input-create input {
+    width: 75%;
+    margin: 5px 0px 5px 0px;
+    border-radius: 5px;
+    padding: 5px 0px 5px 5px;
+}
+
+.success {
+  display: none;
+  color: green;
+}
+
+.member-create {
+  background-color: white;
+  padding: 10px 0px 10px 0px;
+  margin-top: 30px;
+}
+
+.member-button {
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+.member-button button{
+  border-radius: 5px;
+  padding: 10px 40px 10px 40px;
+  color: #373867;
+  font-weight: bold;
+  background-color: white;
+}
+
+.new {
+  display: flex;
+  flex-direction: column;
+}
+
+.new a {
+  color: #373867;
+  padding-bottom: 5px;
+  font-weight: 300;
+}
+
+@media  screen and (min-width: 1024px){
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  form {
+    width:80%;
+  }
+
+  .input-create {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: start;
+    padding: 7px 14px 7px 14px;
+  }
+
+  .create-input {
+    width: 50%;
+  }
+
+  .create-input-confirm {
+    margin-left: auto;
+  }
+
+  .member {
+    max-width: 230px;
+    width: 33%;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 0px 5px 0px;
+  }
+
+}
