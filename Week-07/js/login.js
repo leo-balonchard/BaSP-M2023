@@ -7,6 +7,8 @@ var passwordError = document.getElementById('password-error');
 var removePassword = document.getElementById('password-default');
 var passwordSuccess = document.getElementById('password-success');
 var submitButton = document.getElementById('login-button');
+var url = 'https://api-rest-server.vercel.app/login';
+
 
 function validateEmail() {
   var emailValue = emailInput.value.trim();
@@ -74,13 +76,28 @@ passwordInput.addEventListener('focus', function() {
 });
 
 submitButton.addEventListener('click', function() {
+  event.preventDefault();
   var emailIsValid = validateEmail();
   var passwordIsValid = validatePassword();
 
   if (emailIsValid && passwordIsValid) {
     var emailValue = emailInput.value.trim();
     var passwordValue = passwordInput.value.trim();
-    alert('The login was successful\nEmail: ' + emailValue + '\nPassword: ' + passwordValue);
+    url += '?email=' + emailValue + '&password=' + passwordValue;
+
+    fetch(url)
+      .then(function(response) {
+        if (!response.ok) {
+          throw new Error('Error de Autenticacion');
+        }
+        return response.json();
+      })
+      .then(function(data) {
+        alert('La solicitud se realizo correctamente.\n' + 'Respuesta de API: ' + JSON.stringify(data.msg));
+      })
+      .catch(function(error) {
+        alert('Hubo un error.\n' + 'Respuesta de API: ' + error.message);
+      });
   } else {
     var errorMessage = '';
     if (!emailIsValid) {
