@@ -37,6 +37,12 @@ We had to work as a team of more than 10 people coordinating the different parts
 
 [Week 06 Validations JS - GitHub Pages](https://leo-balonchard.github.io/BaSP-M2023/Week-06/views/index.html)
 
+## Week 07
+
+- This week we continue working with javascript logic, adding Async and Storage. I had never worked with an api before so it was a big challenge.
+
+[Week 07 JavaScript Async and Storage - GitHub Pages](https://leo-balonchard.github.io/BaSP-M2023/Week-07/views/index.html)
+
 ## Author
 ```
 - Leonardo Balonchard
