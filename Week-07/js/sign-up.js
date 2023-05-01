@@ -131,8 +131,8 @@ function validateId() {
   var idValue = idInput.value.trim();
   var validId = true;
 
-  if (idValue.length < 7) {
-    idError.textContent = 'Please enter a valid ID number (7 or more digits).';
+  if (idValue.length < 7 || idValue.length > 8) {
+    idError.textContent = 'Please enter a valid ID number (7-8 digits).';
     validId = false;
   } else {
     for (var i = 0; i < idValue.length; i++) {
@@ -180,6 +180,16 @@ function validateDate() {
   } else if (dateValue.substring(8,10) < 1 || dateValue.substring(8,10) > 31) {
     dateError.textContent = 'Please enter a valid day (01-31)';
     validDate = false;
+
+  } else {
+    var dateOfBirth = new Date(dateValue);
+    var currentDate = new Date();
+    var ageInMilliseconds = currentDate - dateOfBirth;
+    var ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365);
+    if (ageInYears < 16) {
+      dateError.textContent = 'You must be at least 16 years old';
+      validDate = false;
+    }
   }
 
   if (validDate) {
@@ -206,8 +216,8 @@ function validatePhone() {
   var phoneValue = phoneInput.value.trim();
   var validPhone = true;
 
-  if (phoneValue.length < 10) {
-    phoneError.textContent = 'Please enter a valid phone number (10 or more digits).';
+  if (phoneValue.length !== 10) {
+    phoneError.textContent = 'Please enter a valid phone number (10 digits).';
     validPhone = false;
   } else {
     for (var i = 0; i < phoneValue.length; i++) {
