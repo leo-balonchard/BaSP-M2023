@@ -74,6 +74,7 @@ passwordInput.addEventListener('focus', function() {
 });
 
 submitButton.addEventListener('click', function() {
+  event.preventDefault();
   var emailIsValid = validateEmail();
   var passwordIsValid = validatePassword();
 

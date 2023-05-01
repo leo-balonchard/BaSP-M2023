@@ -471,8 +471,51 @@ confirmInput.addEventListener('focus', function() {
   removeMessageConfirm.style.display = 'block';
 });
 
+function changeDateFormat(date){
+  var dateArray = date.split('-');
+
+  year=dateArray[0];
+  month=dateArray[1];
+  day=dateArray[2];
+
+  dateArray= month + '/' + day + '/' + year;
+  return dateArray;
+}
+
+window.onload = function() {
+  loadLocal();
+};
+
+function createLocal() {
+  localStorage.setItem('name', nameInput.value);
+  localStorage.setItem('lastname', lastnameInput.value);
+  localStorage.setItem('id', idInput.value);
+  localStorage.setItem('date', dateInput.value);
+  localStorage.setItem('phone', phoneInput.value);
+  localStorage.setItem('address', addressInput.value);
+  localStorage.setItem('city', cityInput.value);
+  localStorage.setItem('code', codeInput.value);
+  localStorage.setItem('email', emailInput.value);
+  localStorage.setItem('password', passwordInput.value);
+  localStorage.setItem('confirm', confirmInput.value);
+}
+
+function loadLocal() {
+  nameInput.value = localStorage.getItem('name');
+  lastnameInput.value = localStorage.getItem('lastname');
+  idInput.value = localStorage.getItem('id');
+  dateInput.value = localStorage.getItem('date');
+  phoneInput.value = localStorage.getItem('phone');
+  addressInput.value = localStorage.getItem('address');
+  cityInput.value = localStorage.getItem('city')
+  codeInput.value = localStorage.getItem('code');
+  emailInput.value = localStorage.getItem('email');
+  passwordInput.value = localStorage.getItem('password');
+  confirmInput.value = localStorage.getItem('confirm');
+}
 
 submitButton.addEventListener('click', function() {
+  event.preventDefault();
   var nameIsValid = validateName();
   var lastnameIsValid = validateLastname();
   var idIsValid = validateId();
@@ -487,21 +530,36 @@ submitButton.addEventListener('click', function() {
 
   if (nameIsValid && lastnameIsValid && idIsValid && dateIsValid && phoneIsValid && addressIsValid && cityIsValid
     && codeIsValid && emailIsValid && passwordIsValid && confirmIsValid) {
-    var nameValue = nameInput.value.trim();
-    var lastnameValue = lastnameInput.value.trim();
-    var idValue = idInput.value.trim();
-    var dateValue = dateInput.value.trim();
-    var phoneValue = phoneInput.value.trim();
-    var addressValue = addressInput.value.trim();
-    var cityValue = cityInput.value.trim();
-    var codeValue = codeInput.value.trim();
-    var emailValue = emailInput.value.trim();
-    var passwordValue = passwordInput.value.trim();
-    var confirmValue = confirmInput.value.trim();
 
-    alert('The registration was successful\nName: ' + nameValue + '\nLastname: ' + lastnameValue + '\nID: ' + idValue +
-    '\nDate: ' + dateValue + '\nPhone: ' + phoneValue + '\nAddress: ' + addressValue + '\nCity: ' + cityValue +
-    '\nCode: ' + codeValue + '\nEmail: ' + emailValue + '\nPassword: ' + passwordValue + '\nConfirm: ' + confirmValue);
+    newDate = changeDateFormat(dateInput.value);
+
+    var url = "https://api-rest-server.vercel.app/signup?name="+nameInput.value+"&lastName="+lastnameInput.value
+    +"&dni="+idInput.value+"&dob="+newDate+"&phone="+phoneInput.value+"&address="+addressInput.value
+    +"&city="+cityInput.value+"&zip="+codeInput.value+"&email="+emailInput.value+"&password="+passwordInput.value;
+
+    fetch(url)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        if(data.success){
+            alert(data.msg
+            +"\nName: "+data.data.name
+            +"\nLastname: "+data.data.lastName
+            +"\nID: "+data.data.dni
+            +"\nDate: "+data.data.dob
+            +"\nPhone: "+data.data.phone
+            +"\nAddress: "+data.data.address
+            +"\nCity: "+data.data.city
+            +"\nPostal Code: "+data.data.zip
+            +"\nEmail: "+data.data.email
+            +"\nPassword: "+data.data.password);
+            createLocal();
+            }})
+    .catch(function(error) {
+      console.error(error);
+    });
+
   } else {
     var errorMessage = '';
     if (!nameIsValid) {
