@@ -539,24 +539,31 @@ submitButton.addEventListener('click', function() {
 
     fetch(url)
     .then(function (response) {
-        return response.json();
+      return response.json();
     })
     .then(function (data) {
-        if(data.success){
-            alert(data.msg
-            +"\nName: "+data.data.name
-            +"\nLastname: "+data.data.lastName
-            +"\nID: "+data.data.dni
-            +"\nDate: "+data.data.dob
-            +"\nPhone: "+data.data.phone
-            +"\nAddress: "+data.data.address
-            +"\nCity: "+data.data.city
-            +"\nPostal Code: "+data.data.zip
-            +"\nEmail: "+data.data.email
-            +"\nPassword: "+data.data.password);
-            createLocal();
-            }})
-    .catch(function(error) {
+      if (data.success) {
+        alert(data.msg
+          + "\nName: " + data.data.name
+          + "\nLastname: " + data.data.lastName
+          + "\nID: " + data.data.dni
+          + "\nDate: " + data.data.dob
+          + "\nPhone: " + data.data.phone
+          + "\nAddress: " + data.data.address
+          + "\nCity: " + data.data.city
+          + "\nPostal Code: " + data.data.zip
+          + "\nEmail: " + data.data.email
+          + "\nPassword: " + data.data.password);
+        createLocal();
+      } else {
+        var errorValidationMsg = "Validation API error:\n";
+        for (var i = 0; i < data.errors.length; i++) {
+          errorValidationMsg += data.errors[i].msg + "\n";
+        }
+        alert(errorValidationMsg);
+      }
+    })
+    .catch(function (error) {
       console.error(error);
     });
 
